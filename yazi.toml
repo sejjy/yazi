@@ -1,0 +1,73 @@
+[mgr]
+ratio = [1, 2, 3]
+sort_sensitive = true
+linemode = "permissions"
+show_hidden = true
+show_symlink = true
+scrolloff = 10
+mouse_events = []
+title_format = "{cwd}"
+
+[preview]
+wrap = "no"
+tab_size = 4
+max_width = 1000
+max_height = 1000
+image_quality = 50
+
+[input]
+cursor_blink = true
+
+cd_title = "─ cd: ─"
+cd_origin = "bottom-left"
+cd_offset = [0, 0, 26, 3]
+
+create_title = ["─ Create: ─", "─ Create (dir): ─"]
+create_origin = "hovered"
+create_offset = [0, 1, 51, 3]
+
+rename_title = "─ Rename: ─"
+rename_offset = [0, 1, 51, 3]
+
+filter_title = "─ Filter: ─"
+filter_origin = "bottom-left"
+filter_offset = [0, 0, 26, 3]
+
+find_title = ["─ /: ─", "─ ?: ─"]
+find_origin = "bottom-left"
+find_offset = [0, 0, 26, 3]
+
+search_title = "─ {n}: ─"
+search_origin = "bottom-left"
+search_offset = [0, 0, 26, 3]
+
+shell_origin = "bottom-left"
+shell_offset = [0, 0, 26, 3]
+shell_title = ["─ ; ─", "─ : ─"]
+
+[confirm]
+trash_title = "─ Trash {n} selected files? ─"
+trash_offset = [0, 0, 51, 14]
+
+delete_title = "─ Delete {n} selected files? ─"
+delete_offset = [0, 0, 51, 14]
+
+overwrite_title = "─ Overwrite file? ─"
+overwrite_offset = [0, 0, 51, 14]
+
+quit_title = "─ Quit? ─"
+quit_offset = [0, 0, 51, 14]
+
+[pick]
+open_title = "─ Open with: ─"
+open_offset = [0, 1, 51, 3]
+
+[[plugin.prepend_fetchers]]
+id   = "git"
+name = "*"
+run  = "git"
+
+[[plugin.prepend_fetchers]]
+id   = "git"
+name = "*/"
+run  = "git"
