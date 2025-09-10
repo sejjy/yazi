@@ -1,5 +1,5 @@
 require("full-border"):setup({
-	-- type = ui.Border.PLAIN,
+	type = ui.Border.PLAIN,
 })
 
 th.git = th.git or {}
