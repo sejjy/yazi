@@ -1,3 +1,4 @@
 plugins
 package.toml
 .taplo.toml
+catppuccin-mocha.tmTheme
