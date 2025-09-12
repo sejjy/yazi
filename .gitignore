@@ -1,4 +1,5 @@
-plugins
-package.toml
+plugins/*
+!plugins/confirm-quit.yazi
 .taplo.toml
 catppuccin-mocha.tmTheme
+package.toml
